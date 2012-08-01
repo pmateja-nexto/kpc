@@ -4,10 +4,11 @@
 		<dc:title>eKundelek.pl</dc:title>
 		<dc:language>pl</dc:language>
 		<dc:creator>Krzysztof Szumny</dc:creator>
-		<dc:publisher></dc:publisher>
-		<dc:subject></dc:subject>
+		<dc:publisher>eGazeciarz.pl</dc:publisher>
+		<dc:subject>eKundelek.pl</dc:subject>
 		<dc:date></dc:date>
 		<dc:description></dc:description>
+		
 		<x-metadata>
 			<output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8" />
 		</x-metadata>
@@ -19,5 +20,19 @@
 	
 		<item id="id_test" media-type="application/xhtml+xml" href="file.html" />
 	
+	
+	
 	</manifest>
+	
+	<spine toc="">
+		<!-- the spine defines the linear reading order of the book -->
+		
+		<itemref idref="id_test" />
+		
+		<itemref idref="id_test"  linear="no" />
+		
+	</spine>
+	
+	<guide>
+	</guide>
 </package>

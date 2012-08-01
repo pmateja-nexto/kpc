@@ -8,6 +8,7 @@
 		<dc:subject>{{dc_subject}}</dc:subject>
 		<dc:date>{{dc_date}}</dc:date>
 		<dc:description>{{dc_description}}</dc:description>
+		{% if cover %}<meta name="cover" content="{{cover.id}}" />{% endif %}
 		<x-metadata>
 			<output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8" />
 		</x-metadata>
@@ -17,5 +18,19 @@
 	{% for item in item_list %}
 		<item id="{{item.id}}" media-type="{{item.mimetype}}" href="{{item.href}}" />
 	{% endfor %}
+	
+	{% if cover %}
+		<item id="{{cover.id}}" media-type="{{cover.mimetype}}" href="{{cover.filename}}" />
+	{% endif %}
 	</manifest>
+	
+	<spine toc="{{toc}}">
+		<!-- the spine defines the linear reading order of the book -->
+		{% for item in item_list %}
+		<itemref idref="{{item.id}}" {% if item.no_linear %} linear="no" {% endif %}/>
+		{% endfor %}
+	</spine>
+	
+	<guide>
+	</guide>
 </package>

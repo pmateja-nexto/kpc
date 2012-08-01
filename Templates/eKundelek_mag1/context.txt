@@ -2,3 +2,5 @@ unique_identifier=ekundelek
 dc_title=eKundelek.pl
 dc_lang=pl
 dc_creator = Krzysztof Szumny
+dc_publisher = eGazeciarz.pl
+dc_subject = eKundelek.pl

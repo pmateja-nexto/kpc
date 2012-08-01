@@ -49,7 +49,7 @@ def loadContext():
             dict[key.strip()] = val.strip()
 
     dict['item_list'] = [{'id':'id_test', 'mimetype':'application/xhtml+xml', 'href':'file.html'},
-                        {'id':'id_test', 'mimetype':'application/xhtml+xml', 'href':'file.html'}]
+                        {'id':'id_test', 'mimetype':'application/xhtml+xml', 'href':'file.html', 'no_linear':1}]
     return dict
 
 if __name__ == '__main__':
