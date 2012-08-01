@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="{{dc_lang}}">
+<head>
+	<meta name="dtb:uid" content="{{dtb_uid}}" />
+	<meta name="dtb:depth" content="{{dtb_depth}}" />
+	<meta name="dtb:totalPageCount" content="{{dtb_total_page_count}}" />
+	<meta name="dtb:maxPageNumber" content="{{dtb_max_page_number}}" />
+</head>
+<docTitle><text>{{dc_title}}</text></docTitle>
+<docAuthor><text>{{dc_author}}</text></docAuthor>
+<navPoint>
+{% if periodical %}
+	<navPoint class="periodical">
+		<navLabel><text>{{periodical.label}}</text></navLabel>
+		<content src="{{periodical.content_file}}" />
+		
+		{% for section in section_list %}
+		<navPoint class="section" id="{{section.id}}" playOrder="{{section.play_order}}" >
+			<navLabel><text>{{section.label}}</text></navLabel>
+			<mbp:meta name="description">{{section.description}}</mbp:meta>
+			<mbp:meta name="author">{{section.author}}</mbp:meta>
+			<content src="{{periodical.content_file}}#{{section.content_href_link}}" />
+
+			{% for article in article_list %}
+			<navPoint class="article" id="{{section.id}}_{{article.id}}" playOrder="{{article.play_order}}" >
+				<navLabel><text>{{article.label}}</text></navLabel>
+				<mbp:meta name="description">{{article.description}}</mbp:meta>
+				<mbp:meta name="author">{{article.author}}</mbp:meta>
+				<mbp:meta-img name="mastheadImage" src="{{article.masthead_image}}" />
+				<content src="{{periodical.content_file}}#{{article.content_href_link}}" />
+				
+			</navPoint>
+			{% endfor %}
+		
+		</navPoint>
+		{% endfor %}
+	</navPoint>
+{% endif %}
+</navPoint>
+</ncx>

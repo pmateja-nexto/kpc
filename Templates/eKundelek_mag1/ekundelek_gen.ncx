@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="pl">
+<head>
+	<meta name="dtb:uid" content="" />
+	<meta name="dtb:depth" content="" />
+	<meta name="dtb:totalPageCount" content="" />
+	<meta name="dtb:maxPageNumber" content="" />
+</head>
+<docTitle><text>eKundelek.pl</text></docTitle>
+<docAuthor><text></text></docAuthor>
+<navPoint>
+
+	<navPoint class="periodical">
+		<navLabel><text>eKundelek.pl</text></navLabel>
+		<content src="content.html" />
+		
+		
+		<navPoint class="section" id="sid1" playOrder="1" >
+			<navLabel><text>Artyku?y (od najnowszych)</text></navLabel>
+			<mbp:meta name="description">Artyku?y (od najnowszych)_desc</mbp:meta>
+			<mbp:meta name="author">Krzysztof Szumny</mbp:meta>
+			<content src="content.html#art1" />
+
+			
+		
+		</navPoint>
+		
+		<navPoint class="section" id="sid2" playOrder="2" >
+			<navLabel><text>Inne</text></navLabel>
+			<mbp:meta name="description">Inne_desc</mbp:meta>
+			<mbp:meta name="author">Magdalena Szumna</mbp:meta>
+			<content src="content.html#art2" />
+
+			
+		
+		</navPoint>
+		
+	</navPoint>
+
+</navPoint>
+</ncx>
