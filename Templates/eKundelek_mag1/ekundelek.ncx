@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="pl">
+<head>
+	<meta name="dtb:uid" content="ekundelek"/>
+	<meta name="dtb:depth" content="2"/>
+	<meta name="dtb:totalPageCount" content="0"/>
+	<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>eKundelek.pl</text></docTitle>
+<docAuthor><text>Krzysztof Szumny</text></docAuthor>
+<navMap>
+	<navPoint class="periodical">
+		<navLabel><text>eKundelek.pl</text></navLabel>
+		<content src="all.htm" />
+		<!--<content src="inne.htm" />-->
+		
+		
+		<navPoint class="section" id="1" playOrder="1">
+			<navLabel><text>Artykuły (od najnowszych)</text></navLabel>
+			<mbp:meta name="description">Artykuły (od najnowszych)</mbp:meta>
+			<mbp:meta name="author">Krzysztof Szumny</mbp:meta>
+			<content src="all.htm#section_1" />
+
+			<navPoint class="article" id="1_1" playOrder="2">
+				<mbp:meta name="description">Trzeci artykuł z serii Send To Kindle. Tym razem dowiesz się w jaki sposób jednym kliknięciem da się wysyłać długie artykuły z różnych portali wprost na Twojego Kundelka.</mbp:meta>
+				<mbp:meta name="author">Krzysztof Szumny</mbp:meta>
+				<mbp:meta-img src="28_files/klipme_info_graphic_mini.jpeg" name="mastheadImage"/>
+				<content src="all.htm#art1" />
+				<navLabel><text>[STK-3] Klip.me - wysyłka artykułów na Kindle</text></navLabel>
+			</navPoint>
+			<navPoint class="article" id="1_2" playOrder="3">
+				<navLabel><text>Nook Simple Touch vs. Kindle Touch - na który czytnik warto postawić?</text></navLabel>
+				<mbp:meta name="description">Recenzja porównawcza dwóch najpopularniejszych w USA czytników. Jak się okazuję Amazon Kindle ma na rynku godnych siebie konkurentów.</mbp:meta>
+				<mbp:meta name="author">Krzysztof Szumny</mbp:meta>
+				<mbp:meta-img src="27_files/SDC12224_6x8.jpg" name="mastheadImage"/>
+				<content src="all.htm#art2" />
+			</navPoint>
+			<navPoint class="article" id="1_3" playOrder="4">
+				<navLabel><text>[STK-2] Wysyłka książek i dokumentów na Kindle za pomocą Calibre (bez kabla)</text></navLabel>
+				<mbp:meta name="description">Prosty sposób, by ułatwić sobie wrzucanie książek na Kindla.</mbp:meta>
+				<mbp:meta name="author">Krzysztof Szumny - autor</mbp:meta>
+				<mbp:meta-img src="26_files/calibre_main_image_small.jpg" name="mastheadImage"/>
+				<content src="all.htm#art3" />
+			</navPoint>
+		</navPoint>
+
+		<navPoint class="section" id="2" playOrder="5">
+			<navLabel><text>Inne</text></navLabel>
+			<mbp:meta name="description">Inne</mbp:meta>
+			<mbp:meta name="author">Krzysztof Szumny</mbp:meta>
+			<content src="all.htm#section_2" />
+
+			<navPoint class="article" id="2_1" playOrder="6">
+				<content src="all.htm#o_serwisie" />
+				<navLabel><text>O serwisie</text></navLabel>
+				<mbp:meta name="description">Czy eKundelek to tylko ta gazetka? Skąd wzięła się ta nazwa? Dlaczego autorzy piszą w taki a nie inny spospób? Te oraz kilka innych informacji, jak np. "Historia powstania serwisu" znajdziesz w tym artykule.</mbp:meta>
+				<mbp:meta-img src="inne_files/o_serwisie.jpg" name="mastheadImage"/>
+			</navPoint>
+			<navPoint class="article" id="2_2" playOrder="7">
+				<content src="all.htm#cele_i_misja" />
+				<navLabel><text>Cele i misja</text></navLabel>
+				<mbp:meta name="description">"Bo każde przedsięwzięcie powinno mieć obrany kierunek w którym chce się rozwijać."</mbp:meta>
+				<mbp:meta-img src="inne_files/foot_steps.jpg" name="mastheadImage"/>
+			</navPoint>
+			<navPoint class="article" id="2_3" playOrder="8">
+				<content src="all.htm#subskrypcja" />
+				<navLabel><text>W jaki sposób subskrybować eKundelka</text></navLabel>
+				<mbp:meta name="description">Co zrobić, by to eKundelek przychodził do Ciebie a nie Ty do niego?</mbp:meta>
+				<mbp:meta-img src="inne_files/sm.jpg" name="mastheadImage"/>
+			</navPoint>
+			<navPoint class="article" id="2_4" playOrder="9">
+				<content src="all.htm#jak_mozesz_pomoc" />
+				<navLabel><text>Jak możesz pomóc eKundelkowi</text></navLabel>
+				<mbp:meta name="description">Czyli jak sprawić, by autorzy byli jeszcze bardziej uśmiechnięci :)</mbp:meta>
+				<mbp:meta-img src="inne_files/smile.jpg" name="mastheadImage"/>
+			</navPoint><navPoint class="article" id="2_5" playOrder="10">
+				<content src="all.htm#o_autorach" />
+				<navLabel><text>O autorach</text></navLabel>
+				<mbp:meta name="description">Słów kilka o osobach pracujacych nad serwisem.</mbp:meta>
+				<mbp:meta-img src="inne_files/autorzy.jpg" name="mastheadImage"/>
+			</navPoint>
+		</navPoint>
+		
+	</navPoint>
+</navMap>
+</ncx>

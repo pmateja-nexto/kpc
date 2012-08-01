@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="{{unique_identifier}}">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>{{dc_title}}</dc:title>
+		<dc:language>{{dc_lang}}</dc:language>
+		<dc:creator>{{dc_creator}}</dc:creator>
+		<dc:publisher>{{dc_publisher}}</dc:publisher>
+		<dc:subject>{{dc_subject}}</dc:subject>
+		<dc:date>{{dc_date}}</dc:date>
+		<dc:description>{{dc_description}}</dc:description>
+		<x-metadata>
+			<output content-type="application/x-mobipocket-subscription-magazine" encoding="utf-8" />
+		</x-metadata>
+	</metadata>
+	
+	<manifest>
+	{% for item in item_list %}
+		<item id="{{item.id}}" media-type="{{item.mimetype}}" href="{{item.href}}" />
+	{% endfor %}
+	</manifest>
+</package>

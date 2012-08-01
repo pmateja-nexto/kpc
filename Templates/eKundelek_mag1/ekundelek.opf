@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="ekundelek_mag">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>eKundelek.pl&nbsp;</dc:title>
+        <dc:language>pl</dc:language>
+        <meta name="cover" content="my-cover-image" />
+        <!-- <dc:identifier id="BookId" opf:scheme="ISBN">9781375890815</dc:identifier> -->
+
+        <dc:creator>Krzysztof Szumny</dc:creator>
+        <dc:publisher>eGazeciarz.pl</dc:publisher>
+        <dc:subject>eKundelek.pl</dc:subject>
+        <dc:date>2012-07-24T16:54:02+00:00</dc:date>
+        <dc:description>Najsympatyczniejszy blog o e-czytnikach Kindle.
+Artykuły w tym wydaniu: 
+
+[STK-3] Klip.me - wysyłka artykułów na Kindle
+
+Nook Simple Touch vs. Kindle Touch - na który czytnik warto postawić?
+
+[STK-2] Wysyłka książek i dokumentów na Kindle za pomocą Calibre (bez kabla)
+		</dc:description>
+        <x-metadata>
+            <output
+                content-type="application/x-mobipocket-subscription-magazine"
+                encoding="utf-8"/>
+        </x-metadata>
+
+    </metadata>
+
+
+    <manifest>
+		<item id="all" media-type="application/xhtml+xml" href="all.htm"/>
+		<!--<item id="inne" media-type="application/xhtml+xml" href="inne.htm" />-->
+        <item id="item-toc" media-type="application/xhtml+xml" href="ekundelek-toc.html" />
+        <item id="toc" media-type="application/x-dtbncx+xml" href="ekundelek.ncx"/>
+
+        <item id="my-cover-image" media-type="image/gif" href="mag_ekundelek_01_12.gif"/>
+    </manifest>
+
+    <spine toc="toc">
+        <!-- the spine defines the linear reading order of the book -->
+		<itemref idref="my-cover-image" linear="no" />
+        <itemref idref="item-toc"/>
+        <itemref idref="all" />
+		<!--<itemref idref="inne" />-->
+    </spine>
+
+    <guide>
+        <reference type="toc" title="Spis Treści" href="ekundelek-toc.html"></reference>
+     <!--   <reference type="text" title="Witaj" href="Welcome.html"></reference>-->
+    </guide>
+
+</package>
+

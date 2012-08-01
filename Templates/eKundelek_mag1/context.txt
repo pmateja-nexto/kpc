@@ -1,0 +1,4 @@
+unique_identifier=ekundelek
+dc_title=eKundelek.pl
+dc_lang=pl
+dc_creator = Krzysztof Szumny
